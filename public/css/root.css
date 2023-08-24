@@ -1,0 +1,51 @@
+body{ 
+    background-color: var(--color1);
+    color: white;
+}
+:root{
+    --color1: #171717;
+    --color2: #402c88;
+    --color3: #6c4cdf; 
+    --color4: #c2c7ca;
+    --color5: #FC9E4F;
+    --successColor: #1ca900;
+    --errorColor: #9B1D20;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+    margin-top: 30px;
+}
+:focus{
+    outline: none;
+}
+.error{
+    background-color: var(--errorColor);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 1.3rem;
+}
+::selection{
+    background-color: var(--color3);
+    color: var(--color1);
+}
+@media screen and (min-width: 1024px){
+    .error{
+        background-color: var(--errorColor);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 3rem;
+    }
+}

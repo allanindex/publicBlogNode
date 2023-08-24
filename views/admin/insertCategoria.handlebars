@@ -1,0 +1,28 @@
+<link rel="stylesheet" href="/css/insertCategoria.css">
+<div class="container">
+    <div class="categorias">
+        <form action="/admin/postagens/insertCategoria/{{id}}" method="post">
+            <h1>Adicionar categorias</h1>
+            <div class="checkboxs">
+                <div class="category-option">
+                    <input type="checkbox" class="checkbox" name="semCheckboxs" id="deleteCategoria">
+                    <span class="textoCheckboxDelete">sem categorias</span>
+                </div>
+                {{#each categoriasNaoMarcadas}}
+                        <div class="category-option">
+                            <input type="checkbox" class="checkbox" name="checkbox" id="{{this}}" value="{{this}}">
+                            {{this}}
+                    </div>
+                {{/each}}   
+                {{#each categoriasMarcadas}}
+                    <div class="category-option">
+                            <input type="checkbox" class="checkbox" name="checkbox" id="{{this}}" value="{{this}}" checked>
+                            {{this}}
+                    </div>
+                {{/each}}
+            </div>
+            <button class="enviar" type="submit">Inserir categorias</button>
+        </form>
+    </div>
+</div>
+<script src="/js/insertCategoria.js"></script>

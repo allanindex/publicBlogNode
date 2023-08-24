@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/root.css">
+    <link rel="stylesheet" href="/css/novaPostagem.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="/admin/postagens/edit" method="post">
+        <input type="hidden" name="id" value="{{postagem._id}}">
+            <div class="formP1">
+                <h1>Editar postagem</h1>
+                <div class="options">
+                    <div class="formOption">
+                        <label for="titulo">Título:</label>
+                        <br>
+                        <input type="text" name="titulo" placeholder="título" autocomplete="off" value="{{postagem.titulo}}">
+                    </div>
+                    <div class="formOption">
+                       <label for="descricao">Descricao:</label>
+                       <br>
+                       <input type="text" name="descricao" placeholder="descrição" autocomplete="off" value="{{postagem.descricao}}">
+                    </div>
+                     <div class="formOption">
+                         <label for="texto1">Parte 1:</label>
+                         <br>
+                         <textarea class="text-group" name="texto1" id="texto1" cols="30" rows="10">{{postagem.texto1}}</textarea>
+                     </div>
+                     <div class="formOption">
+                        <label for="sub1">Subtítulo 1:</label>
+                        <br>
+                        <input type="text" name="sub1" id="sub1" autocomplete="off" value="{{postagem.sub1}}">
+                     </div>
+                      <div class="formOption">
+                         <label for="texto2">Parte 2:</label>
+                         <br>
+                         <textarea class="text-group" name="texto2" id="texto2" cols="30" rows="10">{{postagem.texto2}}</textarea>
+                     </div>
+                     <div class="formOption">
+                        <label for="sub2">Subtítulo 2:</label>
+                        <br>
+                        <input type="text" name="sub2" id="sub2" autocomplete="off" value="{{postagem.sub2}}">
+                     </div>
+                      <div class="formOption">
+                         <label for="texto3">Parte 3:</label>
+                         <br>
+                         <textarea class="text-group" name="texto3" id="texto3" cols="30" rows="10">{{postagem.texto3}}</textarea>
+                     </div>
+                </div>
+                <button type="submit" class="enviar">Editar postagem</button>
+            </div>
+             
+        </form>
+    </div>
+</body>
+<script src="/js/novaPostagem.js"></script>
+</html>

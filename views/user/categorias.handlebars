@@ -1,0 +1,11 @@
+<link rel="stylesheet" href="/css/user-categorias.css">
+<div class="container">
+    <h1>Lista de categorias</h1>
+    <div class="categorias">
+        {{#each categorias}}
+            <a href="/user/queryCategoria/{{_id}}">
+                <div class="categoria">#{{nome}}</div>
+            </a>
+        {{/each}}
+    </div>
+</div>

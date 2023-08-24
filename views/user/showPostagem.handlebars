@@ -1,0 +1,31 @@
+<link rel="stylesheet" href="/css/showPostagem.css">
+<div class="container">
+    <h1>{{postagem.titulo}}</h1>
+    <div class="hr"></div>
+    <div class="p1">
+        <img src="{{postagem.imgCapa}}" alt="" class="imgCapa">
+        <h2>Introdução</h2>
+        <p>{{postagem.descricao}}</p>
+        <h2>{{postagem.sub1}}</h2>
+        {{#if postagem.img2}}
+            <hr>
+            <br>
+            <img src="{{postagem.img2}}" alt="" class="img2">
+        {{/if}}
+        <p>{{postagem.texto1}}</p>
+        
+        <h2>{{postagem.sub2}}</h2>
+        <hr>
+        <br>
+        <p>{{postagem.texto2}}</p>
+        
+        <h2>{{postagem.sub3}}</h2>
+        
+        {{#if postagem.img3}}
+            <hr>
+            <br>
+            <img src="{{postagem.img3}}" alt="" class="img3">
+        {{/if}}
+        <p>{{postagem.texto3}}</p>
+    </div>
+</div>

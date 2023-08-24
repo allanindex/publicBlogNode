@@ -1,0 +1,93 @@
+footer{
+    height: 37vh;
+    background-color: var(--color2);
+    border-radius: 70px 0 0 0;
+    padding-top: 40px; 
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.atribuition{
+    text-align: center;
+    font-size: 2rem;
+}
+.footer-container-1{
+    display: flex;
+    height: 35vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container-1 .links{
+    display: flex;
+    justify-content:center;
+    gap: 100px;
+    margin: auto;
+    width: 80vw;
+    margin-left: -80px;
+}
+.footer-container-1 .links .link ul{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    list-style: none;
+}
+.footer-container-1 .links li{
+    font-size: 2.5rem;
+ }
+.footer-container-1 span{
+    font-size: 4.2rem;
+    transform: rotate(-90deg);
+    padding: 0;
+    margin-left: -120px;
+    margin-top: 70px;
+}
+
+@media screen and (min-width: 1024px) {
+    footer{
+        height: 40vh;
+        background-color: var(--color2);
+        border-radius: 70px 0 0 0;
+        padding-top: 30px; 
+        padding-bottom: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .atribuition{
+        text-align: center;
+        font-size: 1.3rem;
+        
+    }
+    .footer-container-1{
+        display: flex;
+        width: 100%;
+        height: 28vh;
+        align-items: center;
+        justify-content:space-between;
+        gap: 180px;
+    }
+    
+    .footer-container-1 .links{
+        display: flex;
+        width: fit-content;
+        margin-left: 60px;
+    }
+    .footer-container-1 .links .link ul{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer-container-1 .links .link ul li{
+        font-size: 1.3rem;
+     }
+    .footer-container-1 span{
+        font-size: 3rem;
+        transform: rotate(0deg);
+        padding: 0;
+        margin-left: 70px;
+        margin-top: 0px;
+    }    
+}

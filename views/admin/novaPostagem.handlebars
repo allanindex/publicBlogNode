@@ -1,0 +1,72 @@
+
+<link rel="stylesheet" href="/css/novaPostagem.css">
+<title>Document</title>
+<div class="container">
+    <form action="/admin/postagens/new" method="post" enctype="multipart/form-data">
+        <div class="formP1">
+            <h1>Nova postagem</h1>
+            <div class="options">
+                <div class="formOption">
+                    <label for="titulo">Título:</label>
+                    <br>
+                    <input type="text" name="titulo" placeholder="título" autocomplete="off">
+                </div>
+                <div class="formOption">
+                    <label for="descricao">Descrição:</label>
+                    <br>
+                    <input type="text" name="descricao" placeholder="descrição" autocomplete="off">
+                </div>
+                <div class="optionImg">
+                    <span class="spanImg">Capa:</span>
+                    <br>
+                    <label for="fileInput1" class="labelImg" id="fileLabel1"><span id="fileName1">Adicionar imagem +</span></label>
+                    <input type="file" name="imgCapa" id="fileInput1">
+                </div>
+                <div class="formOption">
+                    <label for="sub1">Subtítulo 1:</label>
+                    <br>
+                    <input type="text" name="sub1" id="sub1" autocomplete="off">
+                </div>
+                <div class="formOption">
+                    <label for="texto1">Parte 1:</label>
+                    <br>
+                    <textarea class="text-group" name="texto1" id="texto1" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formOption">
+                    <label for="sub1">Subtítulo 2:</label>
+                    <br>
+                    <input type="text" name="sub2" id="sub2" autocomplete="off">
+                </div>
+                <div class="optionImg">
+                    <span class="spanImg">Imagem 2:</span>
+                    <br>
+                    <label for="fileInput2" class="labelImg" id="fileLabel2"><span id="fileName2">Adicionar imagem +</span></label>
+                    <input type="file" name="img2" id="fileInput2">
+                </div>
+                <div class="formOption">
+                    <label for="texto2">Parte 2:</label>
+                    <br>
+                    <textarea class="text-group" name="texto2" id="texto2" cols="30" rows="10"></textarea>
+                </div>
+                <div class="formOption">
+                    <label for="sub2">Subtítulo 3:</label>
+                    <br>
+                    <input type="text" name="sub3" id="sub3" autocomplete="off">
+                </div>
+                <div class="optionImg">
+                    <span class="spanImg">Imagem 3:</span>
+                    <br>
+                    <label for="fileInput3" class="labelImg" id="fileLabel3"><span id="fileName3">Adicionar imagem +</span></label>
+                    <input type="file" name="img3" id="fileInput3">
+                </div>
+                <div class="formOption">
+                    <label for="texto3">Parte 3:</label>
+                    <br>
+                    <textarea class="text-group" name="texto3" id="texto3" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <button type="submit" class="enviar">Publicar postagem</button>
+        </div>
+    </form>
+</div>
+<script src="/js/novaPostagem.js"></script>

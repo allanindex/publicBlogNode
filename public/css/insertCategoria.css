@@ -1,0 +1,132 @@
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+.category-option{
+    display: flex;
+   height: 100px;
+   align-items: center;
+   gap: 10px;
+   font-size: 2.3rem;
+
+}
+.checkboxs{
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    justify-content:space-around;
+}
+
+input[type="checkbox"]{
+    all: unset;
+ border: 3px solid rgb(116, 116, 116);
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  border-radius: 50%;
+}
+input[type="checkbox"]:checked:not(#deleteCategoria){
+    background-color: var(--color2);
+    border: 3px solid rgb(18, 0, 65);
+    transition: 0.2s;
+}
+#deleteCategoria:checked{
+    background-color: #ca6060;
+    border: 3px solid rgb(255, 0, 0);
+    transition: 0.2s;
+}
+.textoCheckboxDelete{
+    color: red;
+}
+.categorias{
+    width: 80vw;
+    margin: auto;
+}
+.categorias form{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.checkboxs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.enviar{
+    margin-top: 130px;
+    margin-bottom: 150px;
+    color: white;
+    background-color: var(--color2);
+    width: 450px;
+    height: 120px;
+    font-size: 3rem;
+    border: none;
+    border-radius: 30px;
+}
+@media screen and (min-width: 1024px){
+    h1{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .category-option{
+        display: flex;
+       height: 50px;
+       align-items: center;
+       gap: 10px;
+       font-size: 1.5rem;
+    
+    }
+    .checkboxs{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        margin-top: 40px;
+        justify-content:space-around;
+    }
+    
+    input[type="checkbox"]{
+        all: unset;
+     border: 3px solid rgb(116, 116, 116);
+      width: 30px;
+      height: 30px;
+      display: inline-block;
+      border-radius: 50%;
+    }
+    input[type="checkbox"]:checked{
+        background-color: var(--color2);
+        border: 3px solid rgb(123, 123, 123);
+        transition: 0.2s;
+    }
+    
+    .categorias{
+        width: 80vw;
+        margin: auto;
+    }
+    .categorias form{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .checkboxs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .enviar{
+        margin-top: 80px;
+        color: white;
+        background-color: var(--color2);
+        width: 200px;
+        height: 45px;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 10px;
+    }
+}

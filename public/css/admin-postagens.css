@@ -1,0 +1,214 @@
+.container-1{
+    height: 100vh;
+    padding-top: 30px;
+    z-index: 1;
+}
+h1{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color: white;
+}
+.novaPostagem{
+    height: 80px;
+    width: 250px;
+    border-radius: 10px;
+    font-size: 2rem;
+    border: none;
+    margin-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    background-color: var(--color2);
+    color: white;
+    
+}
+.postagem{
+    border: 3px solid var(--color2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.postagens{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px 5px 0 5px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.texto-postagem{
+    margin-right: 15px;
+    width: 75vw;
+}
+.texto-postagem h2{
+    margin-bottom: 50px;
+    text-align: justify;
+    color: #7c88f0;
+    font-size: 3rem;
+}
+.texto-postagem p{
+    color: #dcdcdc;
+    text-align: justify;
+    font-size: 2rem;
+}
+.postagem-icons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    width: 15vw;
+}
+
+.postagem-icons a div{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.postagem-icons a div svg{
+    width: 50px;
+    height: 50px;
+}
+
+.delete-button{
+    padding: 10px;
+    background-color: var(--errorColor);
+    border-radius: 10px;  
+}
+.search-button{
+    padding: 10px;
+    background-color: var(--color5);
+    border-radius: 10px;
+}
+.edit-button{
+    padding: 10px;
+    background-color: var(--color2);
+    border-radius: 10px;
+}
+.categorias-button{
+    padding: 10px;
+    background-color: var(--color2);
+    border-radius: 10px;
+}
+.categoria{
+    background-color: var(--color2);
+    padding: 3px;
+    border-radius: 5px;
+    font-size: 2.5rem;
+}
+.categorias{
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-1{
+        height: 100vh;
+        padding-top: 30px;
+        z-index: 1;
+        
+    }
+    h1{
+        text-align: center;
+        font-size: 2.5rem;
+        font-weight: 600;
+        color: white;
+    }
+    .novaPostagem{
+        height: 40px;
+        width: 150px;
+        border-radius: 10px;
+        font-size: 1rem;
+        border: none;
+        margin-left: 25px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        background-color: var(--color2);
+        color: white;
+        
+    }
+    .postagem{
+        border: 1px solid var(--color2);
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .postagens{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 5px 0 5px;
+    }
+    .texto-postagem{
+        margin-right: 15px;
+        width: 65vw;
+    }
+    .texto-postagem h2{
+        margin-bottom: 10px;
+        font-size: 1.7rem;
+    }
+    .texto-postagem p{
+        color: #dcdcdc;
+        text-align: justify;
+        font-size: 1.3rem;
+    }
+    .postagem-icons{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+        width: 20vw;
+    }
+    .delete-button{
+        padding: 10px;
+        background-color: var(--errorColor);
+        border-radius: 10px;  
+    }
+    .search-button{
+        padding: 10px;
+        background-color: var(--color5);
+        border-radius: 10px;
+    }
+    .edit-button{
+        padding: 10px;
+        background-color: var(--color2);
+        border-radius: 10px;
+    }
+    .categorias-button{
+        padding: 10px;
+        background-color: var(--color2);
+        border-radius: 10px;
+    }
+    .categoria{
+        background-color: var(--color2);
+        padding: 3px;
+        border-radius: 5px;
+        font-size: 1.3rem;
+    }
+    .categorias{
+        margin-bottom: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .postagem-icons a div{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .postagem-icons a div svg{
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,200 @@
+.container{
+    width: 100vw;
+    margin-left: auto;
+    margin-right: auto;  
+}
+form{
+    width: 100%;
+}
+form textarea{
+    padding: 7px;
+}
+form input[type="text"]{
+    text-align: center;
+}
+form input[type="text"], form textarea{
+    height: 150px;
+    width: 90vw;
+    border: 3px solid var(--color2);
+    border-radius: 10px;
+    font-size: 2.5rem;
+}
+
+.formP1 .formOption{
+    margin-bottom: 40px;
+}
+.formOption label, .spanImg{
+    color: white;
+    font-size: 3rem;
+    font-weight: 500;
+}
+form h1{
+    text-align: center;
+    color: white;
+    font-size: 4rem;
+}
+form .formP1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.options{
+    margin-top: 20px;
+  
+}
+.input-focus{
+    height: 40vh;
+    width: 90vw;
+    padding: 20px;
+} 
+
+.enviar{
+    margin-top: 20px;
+    color: white;
+    background-color: var(--color2);
+    width: 500px;
+    height: 120px;
+    font-size: 3rem;
+    border: none;
+    border-radius: 25px;
+}
+input[type='file']{
+    display: none;
+}
+.optionImg .labelImg{
+    background-color: #484848;
+    padding: 12px;
+    display: block;
+    width: 90vw;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color: white;
+
+
+}
+
+.file-selected {
+    background-color: var(--color2);
+    color: white;
+    display: block;
+    width: 90vw; 
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+  input, textarea{
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+
+
+
+@media screen and (min-width: 1024px) {  
+.container{
+    width: 100vw;
+}
+form{
+    width: 100%;
+}
+form textarea{
+    padding: 7px;
+}
+form input[type="text"]{
+    text-align: center;
+}
+form input[type="text"], form textarea{
+    height: 50px;
+    width: 75vw;
+    border: 1px solid var(--color2);
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
+
+.formP1 .formOption{
+    margin-bottom: 40px;
+}
+.formOption label, .spanImg{
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+form h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+}
+form .formP1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+}
+.options{
+    margin-top: 20px;
+  
+}
+.input-focus{
+    height: 60vh;
+    width: 75vw;
+    padding: 20px;
+} 
+
+.enviar{
+    margin-top: 20px;
+    color: white;
+    background-color: var(--color2);
+    width: 200px;
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+}
+input[type='file']{
+    display: none;
+}
+.optionImg .labelImg{
+    background-color: #484848;
+    padding: 12px;
+    display: block;
+    width: 220px;
+    min-height: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+.file-selected {
+    background-color: var(--color2);
+    color: white;
+    display: block;
+    width: 220px; 
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    cursor: pointer;
+  }
+
+  input, textarea{
+    background-color: transparent;
+    color: white;
+    text-align: justify;
+  }
+  }

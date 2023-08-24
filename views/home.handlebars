@@ -1,0 +1,80 @@
+<link rel="stylesheet" href="/css/home.css">
+     <div class="container">
+        <div class="container-1">
+            <div class="card">
+                <picture>
+                    <source media="(min-width: 1024px)" srcset="/img/blogBackground.jpg">
+                     <img src="/img/img-blog-mobile.jpg" class="blogBackground" alt="">
+                </picture>
+                <div class="container-1-content">
+                    <div class="title">
+                        <h1>Seja bem vindo ao TechInsider
+                            {{#if user}}
+                            {{#each user}}
+                            <span>{{this.nome}}</span>
+                            {{/each}}
+                            {{/if}}
+                            !
+                        </h1>
+                    </div>
+                    <div class="content-a">
+                        <p>Fique por dentro de todas as notícias da comunidade tech, além de praticar programação com <span>exercícios exclusivos!</span></p>
+                        {{#if user}}
+                            <span class="button"></span>
+                            {{#each user}}
+                                <script>
+                                if({{this.isAdmin}} == 1){
+                                    const button = document.querySelector('.button')
+                                    var button1 = document.createElement("button")
+                                    var button2 = document.createElement("button")
+                                   
+                                   
+                                    button1.textContent = "Gerenciar postagens"
+                                    button2.textContent = "Categorias"
+
+                                    const link1 = document.createElement("a")
+                                    link1.href = '/admin/postagens'
+                                    
+
+                                   const link2 = document.createElement("a")
+                                    link2.href = '/admin/categorias'
+
+                                    button1.classList.add("button-admin-1")
+                                    button2.classList.add("button-admin-2")
+
+                                    link1.appendChild(button1)
+                                    link2.appendChild(button2)
+
+                                    button.appendChild(link1)
+                                    button.appendChild(link2)
+                                }
+                                </script>
+                            {{/each}}
+                            {{else}}
+                            <div class="actions">
+                                <a href="/user/cadastro"><button>Cadastre-se</button></a>
+                                <a href="/user/login"><p>Já possui conta?<br> faça login</p></a>
+                            </div>
+                        {{/if}}
+                    </div>
+                </div>
+              </div>
+            </div>
+        <div class="container-2">
+            <div class="title2">
+                <h2>Principais notícias</h2>
+            </div>
+            {{#each postagens}}
+                <hr>
+                <a href="/user/showPostagem/{{_id}}">
+                    <div class="postagem">
+                         <h3>{{titulo}}</h3>
+                    </div>
+                </a>
+            {{/each}}
+        </div>
+    </div>
+
+
+
+

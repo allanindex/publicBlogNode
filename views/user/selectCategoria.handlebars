@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/css/selectCategoria.css">
+<h1>Postagens da categoria {{categoria}}</h1>
+
+<div class="postagens">
+    {{#each postagens}}
+        <a href="/user/showPostagem/{{_id}}">
+            <div class="postagem">{{titulo}}</div>
+        </a>
+        {{else}}
+        <div class="semPostagens">Não foi encontrada nenhuma postagem associada a essa categoria.</div>
+    {{/each}}
+</div>

@@ -1,0 +1,115 @@
+.container{
+    padding-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+h1{
+    font-weight: 600;
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+    width: 90vw;
+    margin: auto;  
+}
+h2{
+    margin-top:  50px;
+    margin-bottom: 15px;
+    font-size: 4rem;
+    color: white;
+    word-break: break-all;
+}
+p{
+    font-size: 2rem;
+    text-align: justify;
+    width: 80vw;
+    margin: auto;
+    color: #dddddd;
+}
+
+.p1{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    display: flex;
+    flex-direction: column;
+   
+}
+.imgCapa{
+    width: 80vw;
+    margin: auto;
+    margin-top: 100px;
+}
+.img2{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.img3{
+    width: 80vw;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.hr{
+    border-top: 1px solid rgb(125, 125, 125);
+    width: 98.8vw;
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    .container{
+        padding-bottom: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    h1{
+        font-weight: 600;
+        font-size: 2.8rem;
+        color: white;
+        width: auto;
+        text-align: justify;
+        margin: 0 15% 0 15%;
+        
+    }
+    h2{
+        margin-top:  30px;
+        margin-bottom: 15px;
+        font-size: 2.3rem;
+        color: white;
+    }
+    p{
+        font-size: 1.3rem;
+        text-align: justify;
+        width: 60vw;
+        color: #dddddd;
+    }
+    
+    .p1{
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgCapa{
+        width: 60vw;
+        margin-top: 10px;
+    }
+    .img2{
+        width: 60vw;
+        margin-bottom: 50px;
+    }
+    .img3{
+        width: 60vw;
+        margin-bottom: 50px;
+    }
+    .hr{
+        border-top: 1px solid rgb(125, 125, 125);
+        width: 98.8vw;
+    }
+}

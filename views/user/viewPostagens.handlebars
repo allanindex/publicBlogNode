@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/css/viewPostagens.css">
+<h1>Publicações</h1>
+<hr>
+<div class="container">
+    <div class="container1">
+        {{#each postagens}}
+        <a href="/user/showPostagem/{{_id}}">
+            <div class="postagem">
+                <h2>{{titulo}}</h2>
+                <p>{{descricao}}</p>
+                <div class="tags">
+                    {{#each categorias}}
+                        <div class="tag">#{{this}}</div>
+                    {{/each}}
+                </div>
+            </div>
+        </a>
+    {{/each}}
+    </div>
+    
+</div>
